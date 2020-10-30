@@ -4,4 +4,4 @@
 
 详细过程请点击 [Flutter 复杂 Loading 动画的抽丝剥茧](https://www.jianshu.com/p/575431630d5c)
 
-iOS 版本点击 (HWLoadingAnimation)[https://github.com/loveway/HWLoadingAnimation]
+iOS 版本点击 [HWLoadingAnimation](https://github.com/loveway/HWLoadingAnimation)
