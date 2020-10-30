@@ -1,15 +1,15 @@
 import 'dart:math' as Math;
 
 import 'package:flutter/material.dart';
-import 'package:hw_animated_demo/animation_config.dart';
-import 'package:hw_animated_demo/square_painter.dart';
+import 'animation_config.dart';
+import 'square_painter.dart';
 import 'wave_progress.dart';
 import 'triangle_painter.dart';
 
-main(List<String> args) => runApp(HWAnimatedDemo());
+main(List<String> args) => runApp(HWAnimationDemo());
 
-class HWAnimatedDemo extends StatelessWidget {
-  const HWAnimatedDemo({Key key}) : super(key: key);
+class HWAnimationDemo extends StatelessWidget {
+  const HWAnimationDemo({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,20 +19,20 @@ class HWAnimatedDemo extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HWCircle(),
+        body: HWAnimatePage(),
       ),
     );
   }
 }
 
-class HWCircle extends StatefulWidget {
-  HWCircle({Key key}) : super(key: key);
+class HWAnimatePage extends StatefulWidget {
+  HWAnimatePage({Key key}) : super(key: key);
 
   @override
-  _HWCircleState createState() => _HWCircleState();
+  _HWAnimatePageState createState() => _HWAnimatePageState();
 }
 
-class _HWCircleState extends State<HWCircle>
+class _HWAnimatePageState extends State<HWAnimatePage>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation _circleWidthTween;

@@ -11,9 +11,6 @@ class HWAnimationConfig {
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 10),
     TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 20),
-    // TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 5),
-    // TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 5),
-    // TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 10),
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 10.0), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(10.0), weight: 45),
   ]);
@@ -24,9 +21,6 @@ class HWAnimationConfig {
     TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 20),
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 10),
     TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 10),
-    // TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 10),
-    // TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 5),
-    // TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 5),
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 10.0), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(10.0), weight: 45),
   ]);
