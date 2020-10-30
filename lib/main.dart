@@ -145,7 +145,7 @@ class _HWAnimatePageState extends State<HWAnimatePage>
                 Container(
                   height: _waveHeightTween.value,
                   width: _waveWidthTween.value,
-                  child: HWWaveProgress(
+                  child: WaveProgress(
                     size: 120,
                     borderWidth: 0.0,
                     backgroundColor: Colors.transparent,

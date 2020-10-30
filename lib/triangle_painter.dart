@@ -8,9 +8,7 @@ class TrianglePainter extends CustomPainter {
     ..isAntiAlias = true
     ..strokeJoin = StrokeJoin.round;
   Path _path = Path();
-  double left;
-  double right;
-  double top;
+  double left, right, top;
   TrianglePainter({this.left, this.right, this.top});
 
   @override
@@ -25,7 +23,5 @@ class TrianglePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return false;
-  }
+  bool shouldRepaint(CustomPainter oldDelegate) => true;
 }

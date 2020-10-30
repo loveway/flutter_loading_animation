@@ -11,20 +11,19 @@ class HWAnimationConfig {
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 10),
     TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 20),
-    TweenSequenceItem(tween: Tween(begin: 120.0, end: 10.0), weight: 10),
-    TweenSequenceItem(tween: ConstantTween<double>(10.0), weight: 45),
+    TweenSequenceItem(tween: Tween(begin: 120.0, end: 0.0), weight: 10),
+    TweenSequenceItem(tween: ConstantTween<double>(0.0), weight: 45),
   ]);
-
 //最开始圆的高度变化
   static TweenSequence circleHeightTweenSequence = TweenSequence([
     TweenSequenceItem(tween: Tween(begin: 0.0, end: 120.0), weight: 5),
     TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 20),
     TweenSequenceItem(tween: Tween(begin: 120.0, end: 130.0), weight: 10),
     TweenSequenceItem(tween: Tween(begin: 130.0, end: 120.0), weight: 10),
-    TweenSequenceItem(tween: Tween(begin: 120.0, end: 10.0), weight: 10),
-    TweenSequenceItem(tween: ConstantTween<double>(10.0), weight: 45),
+    TweenSequenceItem(tween: Tween(begin: 120.0, end: 0.0), weight: 10),
+    TweenSequenceItem(tween: ConstantTween<double>(0.0), weight: 45),
   ]);
-
+// 三角形size变化
   static TweenSequence triangleSizeTweenSequence = TweenSequence([
     TweenSequenceItem(tween: Tween(begin: 0.0, end: 120.0), weight: 15),
     TweenSequenceItem(tween: ConstantTween<double>(120.0), weight: 85),
@@ -33,7 +32,7 @@ class HWAnimationConfig {
 // 三角形的左、右、上变化过程
   static TweenSequence triangleLeftTweenSequence = TweenSequence([
     TweenSequenceItem(tween: ConstantTween<double>(0.2), weight: 15),
-    TweenSequenceItem(tween: Tween(begin: 0.05, end: 0.02), weight: 10),
+    TweenSequenceItem(tween: Tween(begin: 0.2, end: 0.02), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(0.02), weight: 75),
   ]);
   static TweenSequence triangleRightTweenSequence = TweenSequence([
@@ -43,7 +42,7 @@ class HWAnimationConfig {
   ]);
   static TweenSequence triangleTopTweenSequence = TweenSequence([
     TweenSequenceItem(tween: ConstantTween<double>(0.05), weight: 35),
-    TweenSequenceItem(tween: Tween(begin: 0.0, end: -0.1), weight: 10),
+    TweenSequenceItem(tween: Tween(begin: 0.05, end: -0.1), weight: 10),
     TweenSequenceItem(tween: ConstantTween<double>(-0.1), weight: 55),
   ]);
 
@@ -72,8 +71,8 @@ class HWAnimationConfig {
   ]);
   // 水波矩形最后偏移量的变化（由于根据三角形的偏移，最后整体都会向上偏移 10，这个动画最后要修正这个便宜）
   static TweenSequence waveOffsetYTweenSequence = TweenSequence([
-    TweenSequenceItem(tween: ConstantTween<double>(-10.0), weight: 95),
-    TweenSequenceItem(tween: Tween(begin: -10.0, end: 0.0), weight: 5),
+    TweenSequenceItem(tween: ConstantTween<double>(-15.0), weight: 95),
+    TweenSequenceItem(tween: Tween(begin: -15.0, end: 0.0), weight: 5),
   ]);
   // 水波宽高变化
   static TweenSequence waveWidthTweenSequence = TweenSequence([

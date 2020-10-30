@@ -43,7 +43,7 @@ class SquarePainter extends CustomPainter {
       } else if (i == 3) {
         x = radius;
         y = radius * hFactor;
-      } else if (i == 4) {
+      } else {
         x = wFartor * radius;
         y = radius * hFactor;
       }

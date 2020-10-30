@@ -1,11 +1,11 @@
 import 'dart:math' as Math;
 import 'package:flutter/material.dart';
 
-class HWWaveProgress extends StatefulWidget {
+class WaveProgress extends StatefulWidget {
   final double size, progress, offsetY, borderWidth;
   final Color backgroundColor, waveColor, borderColor;
 
-  HWWaveProgress(
+  WaveProgress(
       {this.size = 200.0,
       this.backgroundColor = Colors.blue,
       this.waveColor = Colors.white,
@@ -15,14 +15,14 @@ class HWWaveProgress extends StatefulWidget {
       this.offsetY = 0.0})
       : assert(progress >= 0 && progress <= 100,
             'Valid range of progress value is [0.0, 100.0]'),
-        assert(offsetY >= -10 && offsetY <= 0,
+        assert(offsetY >= -15 && offsetY <= 0,
             'This value offsetY mast [-10.0, 0.0]');
 
   @override
   _WaveWidgetState createState() => _WaveWidgetState();
 }
 
-class _WaveWidgetState extends State<HWWaveProgress>
+class _WaveWidgetState extends State<WaveProgress>
     with SingleTickerProviderStateMixin {
   AnimationController _animationController;
 
